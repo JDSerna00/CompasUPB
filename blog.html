@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: antiquewhite;
-            margin:10px;
-        }
         img {
             width: 300px;
             height: auto;
@@ -19,29 +14,47 @@
     </style>
 </head>
 <body>
-    <h1><a href="perfil.html">Usuario</a></h1>
-    <nav>
-        <a href="blog.html">Blog</a>
-        <a href="mapa.html">Mapa</a>
-        <a href="contactos.html">Contactos</a>
-        <a href="faq.html">FAQ</a>
-        <p></p>
-        <a href="general.html">General</a>
-        <a href="quejas.html">Quejas</a>
-        <a href="buitreos.html">Buitreos</a>
-            <h4>Título de la publicación</h4>
-            <div>
-                <p>
-                    Descripción
-                <p>
-            </div>
+    <section id="home">
+        <h1><a href="perfil.html">Usuario</a></h1>
+        <h2>ID: 123546 </h2>
+        <button class="notificaciones">Notificaciones</button>
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
             <p></p>
-            <h4>Título de la publicación</h4>
-            <div>
-                <p>
-                    Descripción
-                <p>
+            <ul>
+                <a href="general.html">General</a>
+                <a href="quejas.html">Quejas</a>
+                <a href="buitreos.html">Buitreos</a>
+            </ul>
+        </nav>
+        <section class="blog-entradas">
+            <div class="entrada">
+                <h2 class="autor">Autor del Post</h2>
+                <h3 class="titulo">Título del Post</h3>
+                <p class="contenido">Contenido del Post</p>
+                <div class="votos">
+                    <button class="upvote">▲</button>
+                    <span class="contador">0</span>
+                    <button class="downvote">▼</button>
+                </div>
             </div>
-    </nav>
+            <!-- Puedes agregar más entradas aquí -->
+            <div class="entrada">
+                <h2 class="autor">Autor del Post</h2>
+                <h3 class="titulo">Título del Post</h3>
+                <p class="contenido">Contenido del Post</p>
+                <div class="votos">
+                    <button class="upvote">▲</button>
+                    <span class="contador">0</span>
+                    <button class="downvote">▼</button>
+                </div>
+            </div>
+        </section>
+    </section>
 </body>
 </html>
