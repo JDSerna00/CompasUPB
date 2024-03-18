@@ -1,3 +1,130 @@
+#home{
+    position: relative;
+    width: 310px;
+    height: 650px;
+    margin-left:auto;
+    margin-right:auto;
+}
 .title{
     text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 10px;
+    position: relative; /* Ensures positioning of the notifications button */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+}
+
+.usuario h1 {
+    margin-bottom: 5px;
+    margin-right: 10px; /* Espacio entre el nombre y el botón de notificaciones */
+}
+
+.notificaciones {
+    position: absolute;
+    right: 10px; /* Mueve el botón de notificaciones hacia la derecha */
+    top: 10px;
+}
+.mensajes {
+    position: absolute;
+    right: 10px; /* Mueve el botón de notificaciones hacia la derecha */
+    top: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos de navegación hacia la derecha */   
+}
+nav ul li {
+    flex: 1; /* Hace que los elementos li ocupen todo el espacio disponible */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.blog-entradas {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: hidden; /* Para que las entradas floten correctamente */
+}
+
+.entrada {
+    position: relative;
+    width: calc(50% - 20px); /* 50% del ancho del contenedor padre menos el espacio entre las entradas */
+    float: left; /* Para hacer que las entradas floten */
+    margin-right: 20px; /* Espacio entre las entradas */
+    margin-bottom: 20px;
+    background-color: #f9f9f9; 
+}
+
+.autor {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.titulo {
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.contenido {
+    font-size: 10px;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.votos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.votos button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contador {
+    margin: 0 10px;
+    padding: 2px;
+}
+
+/* Ajuste para la última entrada si hay un número impar de ellas */
+.entrada:last-child {
+    margin-right: 0;
 }
